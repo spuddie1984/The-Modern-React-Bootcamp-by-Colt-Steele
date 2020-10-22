@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  develop:
+    container_name: react_bootcamp
+    image: react:latest
+    volumes:
+      - ./app/src:/app/src
+      - ./app/public:/app/public
+    ports:
+      - "8100:3000"
+    stdin_open: true
