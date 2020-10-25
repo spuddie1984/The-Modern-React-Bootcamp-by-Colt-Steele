@@ -9,4 +9,5 @@ services:
       - ./app/public:/app/public
     ports:
       - "8100:3000"
+    command: npm start
     stdin_open: true
